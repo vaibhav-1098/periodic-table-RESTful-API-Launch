@@ -43,13 +43,13 @@
 <br />
 💧http://localhost:3000/api/elements?group_number=1
 <br>
-<i>group number can vary from 1-18</i>
+<li>group number can vary from 1-18</li>
 <br><br>
 <u>Filter by period number :-</u>
 <br />
 💧http://localhost:3000/api/elements?period_number=1
 <br>
-<i>group number can vary from 1-7</i>
+<li>group number can vary from 1-7</li>
 <br><br>
 <b>Note :- </b>
 <br>
