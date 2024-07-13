@@ -1,12 +1,12 @@
 <b>Periodic Table free to use API with sound recorded by me</b>
 <hr />
-💧Get All Elements :- https://periodic-table-api-rana.vercel.app//api/elements
+💧Get All Elements :- https://periodic-table-api-rana.vercel.app/api/elements
 <br />
-💧Get Element with Atomic Number :- https://periodic-table-api-rana.vercel.app//api/elements/1
+💧Get Element with Atomic Number :- https://periodic-table-api-rana.vercel.app/api/elements/1
 <br />
 ㅤ<i>(Replace 1 with any Atomic Number from 1 to 118)</i>
 <br />
-💧Get Element with Symbol :- https://periodic-table-api-rana.vercel.app//api/elements/symbol/H
+💧Get Element with Symbol :- https://periodic-table-api-rana.vercel.app/api/elements/symbol/H
 <br />
 ㅤ<i>(Replace H with any symbol like He, Li, Be, ... etc)</i> <br /><br />
 <img src="https://i.ibb.co/7QxfGzr/Screenshot-2024-07-13-193327.png" alt="Hydrogen" width="500" />
@@ -15,7 +15,7 @@
 <hr />
 <u>Filter by type :-</u>
 <br />
-💧https://periodic-table-api-rana.vercel.app//api/elements?type=non-metal
+💧https://periodic-table-api-rana.vercel.app/api/elements?type=non-metal
 <br>
 <i>type can have the following values</i>
 <li>alkali-metal</li>
@@ -41,13 +41,13 @@
 <br>
 <u>Filter by group number :-</u>
 <br />
-💧https://periodic-table-api-rana.vercel.app//api/elements?group_number=1
+💧https://periodic-table-api-rana.vercel.app/api/elements?group_number=1
 <br>
 <li>group number can vary from 1-18</li>
 <br><br>
 <u>Filter by period number :-</u>
 <br />
-💧https://periodic-table-api-rana.vercel.app//api/elements?period_number=1
+💧https://periodic-table-api-rana.vercel.app/api/elements?period_number=1
 <br>
 <li>group number can vary from 1-7</li>
 <br><br>
@@ -55,5 +55,5 @@
 <br>
 <u>two queries can be combined using '&'</u>
 <br>
-💧https://periodic-table-api-rana.vercel.app//api/elements?group_number=14&type=basic-metal
+💧https://periodic-table-api-rana.vercel.app/api/elements?group_number=14&type=basic-metal
 <br><br>
