@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 // create database
-mongoose.connect("mongodb+srv://rana2003v:ejTUBWCepXxCvMn3@mycluster.lslgleu.mongodb.net/PeriodicTable").then(() => {
+mongoose.connect(process.env.DB_URL).then(() => {
   console.log("connected to database");
 });
 
