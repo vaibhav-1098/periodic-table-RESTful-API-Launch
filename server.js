@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
     res.send(`
         <p style="text-align: center;">
             periodic table api
-            <span><a href="https://github.com/vaibhav-1098/Periodic-Table-API-Launch">view Docs</a></span>
+            <span><a href="https://github.com/vaibhav-1098/periodic-table-RESTful-API-Launch">view Docs</a></span>
         </p>
     `);
 });
