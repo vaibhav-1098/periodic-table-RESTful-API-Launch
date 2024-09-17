@@ -1,3 +1,14 @@
+# periodic-table-rest-api
+
+<u>Base URL</u> : https://periodic-table-api-rana.vercel.app <br>
+
+🟢 GET /api/elements: Retrieve a list of all element. <br>
+🟢 GET /api/element/:number: Get element by its Atomic Number. <br>
+🟢 GET /api/element/symbol/:symbol: Get element by its Symbol. <br>
+🔴 POST /api/element/new: Create a new element. <br>
+🔴 PATCH /api/element/update/:id: Update element by its ID. <br>
+🔴 DELETE /api/element/delete/:id: Delete element by its ID. <br>
+
 <b>Periodic Table free to use API with sound recorded by me</b>
 <hr />
 💧Get All Elements :- https://periodic-table-api-rana.vercel.app/api/elements

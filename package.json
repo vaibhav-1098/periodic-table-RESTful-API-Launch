@@ -1,5 +1,5 @@
 {
-  "name": "periodic-table",
+  "name": "new-folder",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -13,6 +13,6 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "mongoose": "^8.5.1"
+    "mongoose": "^8.6.1"
   }
 }

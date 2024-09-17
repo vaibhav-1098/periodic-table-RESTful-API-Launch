@@ -1,5 +1,0 @@
-to do:-
-other operations c,u,d but forbidden
-folder structure 
-authenticate
-api key 

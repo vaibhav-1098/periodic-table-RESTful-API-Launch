@@ -1,56 +1,46 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const Element = require("./database");
+const elementControllers = require("./controllers/elementControllers");
+
+// restricting
+const allowOnlyGetRoutes = (req, res, next) => {
+    if (req.method == "GET") {
+        next();
+    } else {
+        res.status(403).json({ message: "forbidden" });
+    }
+};
 
 // middleware
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(allowOnlyGetRoutes);
 
 /* routes */
 
-app.get("/",(req,res)=>{
-  res.send("Periodic Table API")
-})
-
-app.get("/api/elements", async (req, res) => {
-  try {
-    const myData = await Element.find(req.query, { _id: 0 });
-    res.status(200).json(myData);
-  } catch (error) {
-    res.status(500).json({ message: "an error occurred" });
-  }
+app.get("/", (req, res) => {
+    res.send(`
+        <p style="text-align: center;">
+            periodic table api
+            <span><a href="https://github.com/vaibhav-1098/Periodic-Table-API-Launch">view Docs</a></span>
+        </p>
+    `);
 });
 
-app.get("/api/elements/:number", async (req, res) => {
-  try {
-    const myData = await Element.find({ atomic_number: req.params.number }, { _id: 0 });
-    if (myData.length == 0) {
-      return res.status(404).json({ message: "Element not found" });
-    }
-    res.status(200).json(myData);
-  } catch (error) {
-    res.status(500).json({ message: "an error occurred" });
-  }
-});
+app.get("/api/elements", elementControllers.getAllElements);
+app.get("/api/element/:number", elementControllers.getElementByAtomicNumber);
+app.get("/api/element/symbol/:symbol", elementControllers.getElementBySymbol);
+app.post("/api/element/new", elementControllers.createNewElement);
+app.patch("/api/element/update/:id", elementControllers.updateElementById);
+app.delete("/api/element/delete/:id", elementControllers.deleteElementById);
 
-app.get("/api/elements/symbol/:symbol", async (req, res) => {
-  try {
-    const myData = await Element.find({ symbol: req.params.symbol }, { _id: 0 });
-    if (myData.length == 0) {
-      return res.status(404).json({ message: "Element not found" });
-    }
-    res.status(200).json(myData);
-  } catch (error) {
-    res.status(500).json({ message: "an error occurred" });
-  }
-});
-
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found" });
+app.use("/", (req, res) => {
+    res.status(404).json({ message: "route not found" });
 });
 
 // port
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log("server started");
+    console.log("server started");
 });
