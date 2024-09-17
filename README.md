@@ -2,7 +2,7 @@
 
 <u>Base URL</u> : https://periodic-table-api-rana.vercel.app <br>
 
-🟢 GET /api/elements: Retrieve a list of all element. <br>
+🟢 GET /api/elements: Retrieve a list of all elements. <br>
 🟢 GET /api/element/:number: Get element by its Atomic Number. <br>
 🟢 GET /api/element/symbol/:symbol: Get element by its Symbol. <br>
 🔴 POST /api/element/new: Create a new element. <br>
