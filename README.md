@@ -13,11 +13,11 @@
 <hr />
 💧Get All Elements :- https://periodic-table-api-rana.vercel.app/api/elements
 <br />
-💧Get Element with Atomic Number :- https://periodic-table-api-rana.vercel.app/api/elements/1
+💧Get Element with Atomic Number :- https://periodic-table-api-rana.vercel.app/api/element/1
 <br />
 ㅤ<i>(Replace 1 with any Atomic Number from 1 to 118)</i>
 <br />
-💧Get Element with Symbol :- https://periodic-table-api-rana.vercel.app/api/elements/symbol/H
+💧Get Element with Symbol :- https://periodic-table-api-rana.vercel.app/api/element/symbol/H
 <br />
 ㅤ<i>(Replace H with any symbol like He, Li, Be, ... etc)</i> <br /><br />
 <img src="https://i.ibb.co/7QxfGzr/Screenshot-2024-07-13-193327.png" alt="Hydrogen" width="500" />
