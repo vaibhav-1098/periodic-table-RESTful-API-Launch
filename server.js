@@ -2,15 +2,11 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const elementControllers = require("./controllers/elementControllers");
+const allowOnlyGetRoutes = require("./middleware/restrictRequests");
+const connectDB = require("./config/database");
 
-// restricting
-const allowOnlyGetRoutes = (req, res, next) => {
-    if (req.method == "GET") {
-        next();
-    } else {
-        res.status(403).json({ message: "forbidden" });
-    }
-};
+// database connection
+connectDB();
 
 // middleware
 app.use(express.urlencoded({ extended: false }));
